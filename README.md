@@ -1,7 +1,6 @@
 Tower Defense Game - Godot
 
-A basic tower defense game built using the Godot Engine. Players place towers to defend against waves of enemies. The game features multiple tower types, enemy waves, and a progressive difficulty curve.
-Features:
+A basic tower defense game built using the Godot Engine. Players place towers to defend against waves of enemies. 
 
     Basic tower defense mechanics.
     Multiple tower types and enemy variations. - coming soon
