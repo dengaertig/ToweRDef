@@ -1,4 +1,4 @@
-# ToweRDefTower Defense Game - Godot
+Tower Defense Game - Godot
 
 A basic tower defense game built using the Godot Engine. Players place towers to defend against waves of enemies. The game features multiple tower types, enemy waves, and a progressive difficulty curve.
 Features:
