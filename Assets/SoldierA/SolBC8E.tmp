@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cyx36o8lfkdhy"]
+
+[ext_resource type="Script" path="res://Assets/SoldierA/soldier_a.gd" id="1_d71o4"]
+[ext_resource type="Texture2D" uid="uid://dbfspariweuj2" path="res://Assets/TileSets/tower-defense-top-down/PNG/Default size/towerDefense_tile245.png" id="1_mwgxd"]
+[ext_resource type="Script" path="res://Assets/SoldierA/progress_bar.gd" id="2_gjgll"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0l2pi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t7cge"]
+radius = 21.0238
+
+[node name="SoldierA" type="CharacterBody2D"]
+script = ExtResource("1_d71o4")
+speed = 100
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+modulate = Color(0, 0.991594, 0.404651, 1)
+material = SubResource("CanvasItemMaterial_0l2pi")
+offset_left = -34.0
+offset_top = -45.0
+offset_right = 36.0
+offset_bottom = -33.0
+max_value = 10.0
+value = 10.0
+rounded = true
+show_percentage = false
+script = ExtResource("2_gjgll")
+
+[node name="TowerDefenseTile245" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(2, 2)
+texture = ExtResource("1_mwgxd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t7cge")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
